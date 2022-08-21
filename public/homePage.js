@@ -68,7 +68,7 @@ ApiConnector.getFavorites(response => {
 	if (response.success) {
 		favoritesWidget.clearTable();
 		favoritesWidget.fillTable(response.data);
-		MoneyManager.updateUsersList(response.data);
+		moneyManager.updateUsersList(response.data);
 	}
 })
 
